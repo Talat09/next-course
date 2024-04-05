@@ -1,4 +1,5 @@
 import { Span } from "next/dist/trace";
+import Link from "next/link";
 
 const page = () => {
   const blogs = [
@@ -48,6 +49,11 @@ const page = () => {
                 <span className="bg-green-400 px-3  text-white">{tag}</span>
               </p>
             ))}
+            <Link href={`/blog/${blog.id}`}>
+              <button className="bg-green-600 text-white mt-5 p-5 rounded-md">
+                Blog Details
+              </button>
+            </Link>
           </div>
         ))}
       </div>
