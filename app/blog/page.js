@@ -1,4 +1,3 @@
-import { Span } from "next/dist/trace";
 import Link from "next/link";
 
 const page = () => {
