@@ -1,5 +1,8 @@
 import Link from "next/link";
-
+export const metadata = {
+  title: "About Next App",
+  description: "This is the about page",
+};
 const AboutLayout = ({ children }) => {
   return (
     <div>
